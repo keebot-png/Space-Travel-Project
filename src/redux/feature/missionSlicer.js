@@ -1,3 +1,4 @@
+/* eslint-disable no-param-reassign */
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
 
@@ -29,7 +30,7 @@ const missionSlice = createSlice({
     },
     [fetchMission.fulfilled]: (state, action) => {
       state.loading = false;
-     
+      state.missions = action.payload;
     },
   },
 
