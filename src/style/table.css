@@ -17,7 +17,7 @@
 }
 
 td {
-  font-size: 14px;
+  font-size: 12px;
 }
 
 .mission-table td {
@@ -37,20 +37,24 @@ td {
   background-color: rgba(221, 221, 221, 0.431);
 }
 
-.center {
-  text-align: center;
-}
-
 button {
-  text-align: center;
+  padding: 2px 6px;
 }
 
-.join-mission {
-  color: grey;
+.mission-button-join {
+  color: rgba(128, 128, 128, 0.992);
   border: 1px solid grey;
 }
 
-.leave-mission {
+.mission-button-leave {
   color: red;
   border: 1px solid red;
+}
+
+.mission-status-active {
+  background-color: #18a2b8;
+  color:white;
+  padding:4px 8px;
+  border: 1px solid #18a2b8;
+  border-radius: 4px;
 }

@@ -1,11 +1,10 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { fetchMission } from '../redux/feature/missionSlicer';
+import { fetchMission, toggleMission } from '../redux/feature/missionSlicer';
 
 import '../style/table.css';
 
 const Table = () => {
-  const [state, setState] = useState('NOT A MEMBER');
   const dispatch = useDispatch();
   // get missions data from the store
   const { missions } = useSelector((state) => state.missions);
@@ -14,9 +13,7 @@ const Table = () => {
   }, []);
 
   const joinHandler = (e) => {
-    setState('Active Member');
-    e.target.innerHTML = 'Leave Mission';
-    e.target.className = 'leave-mission';
+    dispatch(toggleMission(e.target.id));
   };
 
   return (
@@ -32,18 +29,25 @@ const Table = () => {
         </thead>
         <tbody>
           {missions.map((mission) => (
-            <tr key={mission.mission_id}>
-              <th scope="row">{mission.mission_name}</th>
+            <tr key={mission.id}>
+              <th scope="row">{mission.name}</th>
               <td>{mission.description}</td>
-              <td className="center">{state}</td>
+              <td className='center'>
+                <span
+                  className={`mission-status-${mission.reserved ? "active" : "not-active"}`}>
+                  {mission.reserved ? "Active Member" : "Not A Member"}
+                </span>
+              </td>
               <td className="center">
                 <button
-                  id={mission.mission_id}
-                  className="join-mission"
+                  id={mission.id}
+                  className={`mission-button-${
+                    mission.reserved ? "leave" : "join"
+                  }`}
                   type="button"
                   onClick={joinHandler}
                 >
-                  Join Mission
+                  {mission.reserved ? "Leave Mission" : "Join Mission"}
                 </button>
               </td>
             </tr>
