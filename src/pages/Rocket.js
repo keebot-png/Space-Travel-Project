@@ -6,4 +6,4 @@ const Rocket = () => (
   </div>
 );
 
-export default Rocket;
+export default Rockets;
