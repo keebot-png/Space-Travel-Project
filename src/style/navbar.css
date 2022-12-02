@@ -1,9 +1,9 @@
 .nav-container {
   width: 100%;
   height: 45px;
-  padding:3px 20px;
+  padding: 3px 20px;
   display: flex;
-  border-bottom:1px solid grey;
+  border-bottom: 1px solid grey;
   justify-content: space-between;
 }
 
@@ -28,4 +28,8 @@
 .nav-link {
   color: black;
   font-size: 15px;
+}
+
+.active {
+  color: rgb(5, 97, 195);
 }

@@ -4,12 +4,14 @@ import { fetchMission, toggleMission } from '../redux/feature/missionSlicer';
 
 import '../style/table.css';
 
-const Table = () => {
+const MissionData = () => {
   const dispatch = useDispatch();
   // get missions data from the store
   const { missions } = useSelector((state) => state.missions);
   useEffect(() => {
-    dispatch(fetchMission());
+    if (missions.length === 0) {
+      dispatch(fetchMission());
+    }
   }, []);
 
   const joinHandler = (e) => {
@@ -33,11 +35,11 @@ const Table = () => {
               <th scope="row">{mission.name}</th>
               <td>{mission.description}</td>
               <td className="center">
-                <span
+                <p
                   className={`mission-status-${mission.reserved ? 'active' : 'not-active'}`}
                 >
                   {mission.reserved ? 'Active Member' : 'Not A Member'}
-                </span>
+                </p>
               </td>
               <td className="center">
                 <button
@@ -59,4 +61,4 @@ const Table = () => {
   );
 };
 
-export default Table;
+export default MissionData;

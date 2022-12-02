@@ -1,4 +1,3 @@
-/* eslint-disable no-param-reassign */
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
 // mission url
@@ -46,14 +45,6 @@ const missionSlice = createSlice({
           ...mission,
           reserved: !mission.reserved,
         };
-      }),
-    }),
-    reservedMissions: ({ missions }) => ({
-      reservation: missions.map((mission) => {
-        if (mission.reserved === true) {
-          return mission;
-        }
-        return { ...mission };
       }),
     }),
   },

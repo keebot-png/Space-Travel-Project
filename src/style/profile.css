@@ -1,0 +1,8 @@
+.Profile {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.Profile .table {
+  width: 40vw;
+}

@@ -13,7 +13,7 @@ const Navbar = () => (
     </NavLink>
     <ul className="nav-items">
       <li className="nav-item">
-        <NavLink className="nav-link" to="/">
+        <NavLink className="nav-link active" to="/">
           Rocket
         </NavLink>
       </li>

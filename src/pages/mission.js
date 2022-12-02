@@ -1,9 +1,9 @@
 import React from 'react';
-import Table from '../components/Table';
+import MissionData from '../components/MissionData';
 
 const Mission = () => (
   <div>
-    <Table />
+    <MissionData />
   </div>
 );
 

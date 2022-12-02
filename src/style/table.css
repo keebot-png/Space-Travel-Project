@@ -1,5 +1,6 @@
 .mission-table th {
   padding-top: 12px;
+  font-size: 14px;
   padding-bottom: 12px;
   text-align: left;
   border: 1px solid #ddd;
@@ -16,13 +17,20 @@
   table-layout: fixed;
 }
 
-td {
-  font-size: 12px;
-}
-
 .mission-table td {
   border: 1px solid #ddd;
   padding: 6px;
+  font-size: 13px;
+}
+
+.mission-table p {
+  display: flex;
+  justify-content: center;
+}
+
+.mission-table .center p,
+button {
+  margin: 30px 6px;
 }
 
 .mission-table tbody tr {
@@ -37,8 +45,9 @@ td {
   background-color: rgba(221, 221, 221, 0.431);
 }
 
-button {
-  padding: 2px 6px;
+.mission-table button {
+  padding: 2px 0;
+  width: 96px;
 }
 
 .mission-button-join {
@@ -51,10 +60,16 @@ button {
   border: 1px solid red;
 }
 
-.mission-status-active {
+.mission-status-not-active {
+  background-color: rgb(109, 117, 125) !important;
+  border: 1px solid rgb(109, 117, 125) !important;
+}
+
+.mission-status-active,
+.mission-status-not-active {
   background-color: #18a2b8;
-  color:white;
-  padding:4px 8px;
+  font-size: 10px;
+  color: white;
   border: 1px solid #18a2b8;
   border-radius: 4px;
 }
