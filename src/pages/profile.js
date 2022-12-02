@@ -5,9 +5,11 @@ import { useSelector } from 'react-redux';
 import '../style/profile.css';
 
 const Profile = () => {
+  // get missions and rockets data from store
   const { missions } = useSelector((state) => state.missions);
   const { rockets } = useSelector((state) => state.rockets);
 
+  // filter out only mission and rocket have been reserved
   const mission = missions.filter((mission) => mission.reserved);
   const rocket = rockets.filter((rocket) => rocket.reserved);
 
