@@ -1,0 +1,56 @@
+.mission-table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+.mission-table th:nth-child(2) {
+  width: 65%;
+}
+
+.mission-table {
+  border-collapse: collapse;
+  width: 95%;
+  margin: auto;
+  table-layout: fixed;
+}
+
+td {
+  font-size: 14px;
+}
+
+.mission-table td {
+  border: 1px solid #ddd;
+  padding: 6px;
+}
+
+.mission-table tbody tr {
+  background-color: #fff !important;
+}
+
+.mission-table tbody tr:nth-child(even) {
+  background-color: #f2f2f288;
+}
+
+.mission-table tbody tr:hover {
+  background-color: rgba(221, 221, 221, 0.431);
+}
+
+.center {
+  text-align: center;
+}
+
+button {
+  text-align: center;
+}
+
+.join-mission {
+  color: grey;
+  border: 1px solid grey;
+}
+
+.leave-mission {
+  color: red;
+  border: 1px solid red;
+}
