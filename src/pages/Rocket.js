@@ -1,8 +1,11 @@
 import React from 'react';
+import RocketData from '../components/RocketData';
+
+import '../style/rocket.css';
 
 const Rocket = () => (
-  <div>
-    <h1>I am rocket</h1>
+  <div className="Rocket">
+    <RocketData />
   </div>
 );
 

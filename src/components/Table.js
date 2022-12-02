@@ -32,22 +32,23 @@ const Table = () => {
             <tr key={mission.id}>
               <th scope="row">{mission.name}</th>
               <td>{mission.description}</td>
-              <td className='center'>
+              <td className="center">
                 <span
-                  className={`mission-status-${mission.reserved ? "active" : "not-active"}`}>
-                  {mission.reserved ? "Active Member" : "Not A Member"}
+                  className={`mission-status-${mission.reserved ? 'active' : 'not-active'}`}
+                >
+                  {mission.reserved ? 'Active Member' : 'Not A Member'}
                 </span>
               </td>
               <td className="center">
                 <button
                   id={mission.id}
                   className={`mission-button-${
-                    mission.reserved ? "leave" : "join"
+                    mission.reserved ? 'leave' : 'join'
                   }`}
                   type="button"
                   onClick={joinHandler}
                 >
-                  {mission.reserved ? "Leave Mission" : "Join Mission"}
+                  {mission.reserved ? 'Leave Mission' : 'Join Mission'}
                 </button>
               </td>
             </tr>

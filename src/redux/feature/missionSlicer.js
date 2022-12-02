@@ -13,7 +13,7 @@ export const fetchMission = createAsyncThunk(
   'mission/fetch',
   async () => {
     const response = await axios.get(url);
-    return response.data
+    return response.data;
   },
 );
 
@@ -28,26 +28,25 @@ const generateObj = (data) => {
       reserved: false,
     });
   });
-  return missions
-}
+  return missions;
+};
 
 const missionSlice = createSlice({
   name: 'missions',
   initialState,
   reducers: {
-    toggleMission: ({missions}, {payload}) => ({
+    toggleMission: ({ missions }, { payload }) => ({
       ...missions,
       missions: missions.map((mission) => {
         if (mission.id !== payload) {
           return mission;
         }
-        else {
-          return {
-            ...mission,
-            reserved: !mission.reserved,
-          }
-        }
-      })
+
+        return {
+          ...mission,
+          reserved: !mission.reserved,
+        };
+      }),
     }),
     reservedMissions: ({ missions }) => ({
       reservation: missions.map((mission) => {
@@ -55,10 +54,10 @@ const missionSlice = createSlice({
           return mission;
         }
         return { ...mission };
-      })
-    })
+      }),
+    }),
   },
-  extraReducers(builder){
+  extraReducers(builder) {
     builder
       .addCase(fetchMission.pending, (state) => ({ ...state, loading: true }))
       .addCase(fetchMission.fulfilled, (state, { payload }) => ({
@@ -66,10 +65,10 @@ const missionSlice = createSlice({
         loading: false,
         missions: generateObj(payload),
       }))
-    .addCase(fetchMission.rejected, (state) =>({...state, loading:false}))
+      .addCase(fetchMission.rejected, (state) => ({ ...state, loading: false }));
   },
 
 });
 
-export const { toggleMission ,reservedMissions } = missionSlice.actions;
+export const { toggleMission, reservedMissions } = missionSlice.actions;
 export default missionSlice.reducer;
