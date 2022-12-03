@@ -57,11 +57,11 @@ After you're finished please remove all the comments and instructions!
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [your_project_name] <a name="about-project"></a>
+# 📖 Space Travel Project <a name="about-project"></a>
 
-> Describe your project in 1 or 2 sentences.
+> This web app models a space travel website that fetches data from a space missions and rockets API and displays it on the UI. Rockets and mission names, descriptions and reserve buttons are displayed. Clicking on the reserve button enables the name to be displayed on the profile page.
 
-**[your_project__name]** is a...
+**[Space Travel Project]** is:
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -73,6 +73,9 @@ After you're finished please remove all the comments and instructions!
   <summary>Client</summary>
   <ul>
     <li><a href="https://reactjs.org/">React.js</a></li>
+    <li><a href="https://react-bootstrap.github.io/">React Bootstrap</a></li>
+    <li><a href="https://jsx.github.io/">JSX</a></li>
+    <li><a href="https://www.w3.org/Style/CSS/Overview.en.html">CSS</a></li>
   </ul>
 </details>
 
@@ -83,12 +86,6 @@ After you're finished please remove all the comments and instructions!
   </ul>
 </details>
 
-<details>
-<summary>Database</summary>
-  <ul>
-    <li><a href="https://www.postgresql.org/">PostgreSQL</a></li>
-  </ul>
-</details>
 
 <!-- Features -->
 
@@ -96,9 +93,9 @@ After you're finished please remove all the comments and instructions!
 
 > Describe between 1-3 key features of the application.
 
-- **[key_feature_1]**
-- **[key_feature_2]**
-- **[key_feature_3]**
+- **[Fetches data from API]**
+- **[Interactive buttons to update state]**
+- **[Styling with React Bootstrap]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -106,9 +103,9 @@ After you're finished please remove all the comments and instructions!
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-> Add a link to your deployed project.
+> Link to deployed project:
 
-- [Live Demo Link](https://yourdeployedapplicationlink.com)
+- [Live Demo Link](https://fancy-melomakarona-875964.netlify.app/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -124,95 +121,39 @@ To get a local copy up and running, follow these steps.
 
 In order to run this project you need:
 
-<!--
-Example command:
-
-```sh
- gem install rails
-```
- -->
-
 ### Setup
-
-Clone this repository to your desired folder:
-
-<!--
-Example commands:
-
-```sh
-  cd my-folder
-  git clone git@github.com:myaccount/my-project.git
 ```
---->
+git clone https://github.com/keebot-png/Space-Travel-Project.git
+```
 
 ### Install
-
-Install this project with:
-
-<!--
-Example command:
-
-```sh
-  cd my-project
-  gem install
 ```
---->
+npm install 
+```
 
 ### Usage
-
-To run the project, execute the following command:
-
-<!--
-Example command:
-
-```sh
-  rails server
 ```
---->
-
+npm start
+```
 ### Run tests
-
-To run tests, run the following command:
-
-<!--
-Example command:
-
-```sh
-  bin/rails test test/models/article_test.rb
 ```
---->
-
-### Deployment
-
-You can deploy this project using:
-
-<!--
-Example:
-
-```sh
-
+npm test
 ```
- -->
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- AUTHORS -->
+## Authors
 
-## 👥 Authors <a name="authors"></a>
+👤 **keebot-png**
 
-> Mention all of the collaborators of this project.
+- GitHub: [@keebot-png](https://github.com/keebot-png)
+- Twitter: [@KeenanBotes](https://twitter.com/KeenanBotes)
+- LinkedIn: [kee.bot@icloud.com](https://www.linkedin.com/in/keenan-botes-947043160)
 
-👤 **Author1**
+👤 **Ridwanullahi**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@Ridwanullahi](https://github.com/Ridwanullahi-code)
+- LinkedIn: [Ajayi Ridwan](https://www.linkedin.com/mwlite/in/ajayi-ridwan)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -222,10 +163,10 @@ Example:
 
 > Describe 1 - 3 features you will add to the project.
 
-- [ ] **[new_feature_1]**
-- [ ] **[new_feature_2]**
-- [ ] **[new_feature_3]**
- 
+- [ ] **[Enhance the My Profile section by adding a placeholder message when the "My Missions" or "My Rockets" lists are empty (no missions joined or no rockets reserved).]**
+- [ ] **[Enhance the My Profile section by adding the "Cancel reservation" and "Leave Mission" buttons to the lists here. Clicking them will dispatch actions already used in the main Rockets and Missions sections.]**
+- [ ] **[Enhance the My Profile section by adding the "Read more" button for each mission and rocket. Upon click, it will open a corresponding Wikipedia page in a new tab.]**
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- CONTRIBUTING -->
@@ -252,25 +193,7 @@ If you like this project...
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-> Give credit to everyone who inspired your codebase.
-
-I would like to thank...
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- FAQ (optional) -->
-
-## ❓ FAQ <a name="faq"></a>
-
-> Add at least 2 questions new developers would ask when they decide to use your project.
-
-- **[Question_1]**
-
-  - [Answer_1]
-
-- **[Question_2]**
-
-  - [Answer_2]
+- Microverse
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -278,8 +201,6 @@ I would like to thank...
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](./LICENSE) licensed.
-
-_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
+This project is [MIT](./license) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>

@@ -1,7 +1,9 @@
 import React from 'react';
+// import list group from react-component
+import ListGroup from 'react-bootstrap/ListGroup';
+import { useSelector } from 'react-redux';
 
-const Profile = () => (
-
+import '../style/profile.css';
 
 const Profile = () => {
   // get missions and rockets data from store
@@ -29,7 +31,5 @@ const Profile = () => {
     </section>
   );
 };
-
-
 
 export default Profile;
