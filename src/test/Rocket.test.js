@@ -1,23 +1,3 @@
-// import React from 'react';
-// import { render } from '@testing-library/react';
-// import '@testing-library/jest-dom';
-// import { BrowserRouter as Router } from 'react-router-dom';
-// import { Provider } from 'react-redux';
-// import store from '../redux/store';
-// import RocketData from '../components/RocketData';
-// import { fetchRocket } from '../redux/feature/rocketSlicer';
-
-// it('should test the rocket component', () => {
-//     const rocket = render(
-//         <Provider store={store}>
-//             <Router>
-//                 <RocketData />
-//             </Router>
-//         </Provider>,
-//     );
-//     expect(rocket).toMatchSnapshot();
-// })
-
 import Rocket from './__mock__/rocketSlice';
 
 describe('Rocket must pass test', () => {
