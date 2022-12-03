@@ -41,7 +41,7 @@ const MissionData = () => {
                   {mission.reserved ? 'Active Member' : 'Not A Member'}
                 </p>
               </td>
-              <td className="center">
+              <td className="text-center">
                 <button
                   id={mission.id}
                   className={`mission-button-${

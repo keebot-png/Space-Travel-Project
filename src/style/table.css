@@ -53,11 +53,13 @@ button {
 .mission-button-join {
   color: rgba(128, 128, 128, 0.992);
   border: 1px solid grey;
+  border-radius: 4px;
 }
 
 .mission-button-leave {
   color: red;
   border: 1px solid red;
+  border-radius: 4px;
 }
 
 .mission-status-not-active {
