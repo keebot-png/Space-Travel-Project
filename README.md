@@ -105,7 +105,7 @@ After you're finished please remove all the comments and instructions!
 
 > Link to deployed project:
 
-- [Live Demo Link](https://yourdeployedapplicationlink.com)
+- [Live Demo Link](https://fancy-melomakarona-875964.netlify.app/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -150,7 +150,7 @@ npm test
 - Twitter: [@KeenanBotes](https://twitter.com/KeenanBotes)
 - LinkedIn: [kee.bot@icloud.com](https://www.linkedin.com/in/keenan-botes-947043160)
 
-👤 **Author2**
+👤 **Ridwanullahi**
 
 - GitHub: [@Ridwanullahi](https://github.com/Ridwanullahi-code)
 - LinkedIn: [Ajayi Ridwan](https://www.linkedin.com/mwlite/in/ajayi-ridwan)
