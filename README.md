@@ -105,7 +105,7 @@ After you're finished please remove all the comments and instructions!
 
 > Link to deployed project:
 
-- [Live Demo Link](https://fancy-melomakarona-875964.netlify.app/)
+- [Live Demo Link](https://space-travel-site-react.netlify.app/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
